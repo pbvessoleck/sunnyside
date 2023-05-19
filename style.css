@@ -37,6 +37,8 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    place-self: start;
+    width: 100%;
 }
 
 header .logo{
@@ -57,4 +59,54 @@ header h1{
 header .arrow-down{
     place-self: center;
 
+}
+
+.info img{
+    width: 100%;
+}
+
+.description{
+    display: grid;
+    padding: 64px 0px;
+    place-items: center;
+    height: 500px;
+}
+
+.description__title{
+    font-family: var(--title-font);
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    width: 300px;
+}
+
+.description__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-align: center;
+    line-height: 2rem;
+    position: relative;
+}
+
+.description__link{
+    position: relative;
+    font-family: var(--title-font);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.line{
+    height: 8px;
+    position: absolute;
+    bottom: 1%;
+    width: 110%;
+    left: -5%;
+    z-index: -1;
+    opacity: .3;
+}
+
+.line-yellow{
+    background-color: var(--yellow);
 }
